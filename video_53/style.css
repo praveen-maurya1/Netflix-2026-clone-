@@ -179,7 +179,6 @@ nav {
 
 .curve {
     height: auto;
-    /* background: black; */
     background: linear-gradient(181deg, #192247 12%, #000000 96.86%);
     position: relative;
     z-index: 11;
@@ -194,11 +193,8 @@ nav {
 }
 
 .curve h3 {
-    /* color: white; */
     padding: 2rem;
     margin-left: 10rem;
-    /* font-size: 1.5rem; */
-    /* font-weight: 500; */
     position: relative;
 
 }
@@ -212,17 +208,29 @@ nav {
     bottom: -1rem;
 }
 
-.cards {
+.cards-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    position: relative;
+}
+
+.cards {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.2rem;
     width: 90%;
-    max-width: 1276px;
+    max-width: 1201px;
     margin: auto;
     height: auto;
-    flex-wrap: wrap;
     margin-bottom: 5rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.cards::-webkit-scrollbar {
+    display: none;
 }
 
 .card {
@@ -236,7 +244,10 @@ nav {
     border-radius: 0.5rem;
     background-position: center center;
     background-repeat: no-repeat;
+    flex-shrink: 0;
+    margin-left: 1.2rem;
 }
+
 
 .card1 {
     background-image: url("assets/movie1.jpg");
@@ -258,12 +269,67 @@ nav {
     background-image: url("assets/movie5.jpg");
 }
 
-.card h1 {
-    font-size: 6rem;
+.card6 {
+    background-image: url("assets/movie6.jpg");
+}
+
+.card7 {
+    background-image: url("assets/movie7.webp");
+}
+
+.card8 {
+    background-image: url("assets/movie8.webp");
+}
+
+.card9 {
+    background-image: url("assets/movie9.webp");
+}
+
+.card10 {
+    background-image: url("assets/movie10.webp");
+}
+
+.cards-button-container-right {
+    padding: 4.7rem 0rem;
+    top: 5px;
     position: absolute;
-    font-weight: 700;
+    right: 9rem;
+    transition: opacity 400ms ease-in-out;
+    background-color: black;
+}
+
+.cards-button-container-left {
+    padding: 4.7rem 0rem;
+    top: 5px;
+    position: absolute;
+    left: 7rem;
+    transition: transform 400ms ease-in-out;
+    background-color: black;
+}
+
+.cards-button {
+    height: 7.5rem;
+    width: 1.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-left: .8rem;
+    cursor: pointer;
+}
+
+.card h1 {
+    font-size: 6.1rem;
+    position: absolute;
+    font-weight: 1000;
     color: rgb(0, 0, 0);
-    -webkit-text-stroke: 0.1rem rgb(255, 255, 255);
+    -webkit-text-stroke: 0.11rem rgb(255, 255, 255);
     bottom: 0;
     left: -1.5rem;
 }
@@ -272,7 +338,7 @@ nav {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 80%;
+    width: 84%;
     max-width: 1276px;
     margin: auto;
     flex-direction: column;
@@ -306,7 +372,7 @@ nav {
     justify-content: flex-start;
     /* align-items: center; */
     background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
-    width: 14.25rem;
+    width: 15.25rem;
     height: 13.75rem;
     color: white;
     border-radius: 1rem;
