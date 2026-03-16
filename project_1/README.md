@@ -1,6 +1,6 @@
 # Netflix 2026 Clone 🎬
 
-![Project Preview](project_1/preview.png)
+![Project Preview](/project_1/preview.png)
 
 A Netflix-inspired landing page clone built using **HTML, CSS, and JavaScript**.
 This project recreates the Netflix homepage UI including the hero banner, trending movie slider, feature cards, FAQ section, and footer.
@@ -81,7 +81,7 @@ netflix-2026-clone
 
 1. Clone the repository
 ```
-git clone https://github.com/praveen-maurya1/netflix-2026-clone.git
+git clone https://github.com/praveen-maurya1/Netflix-2026-clone-
 ```
 
 2. Open the project folder
@@ -106,16 +106,16 @@ git clone https://github.com/praveen-maurya1/netflix-2026-clone.git
 ## 📸 Screenshots
 
 ### Home Page
-![Home Page](project_1/screenshots/home.png)
+![Home Page](/project_1/screenshots/home.png)
 
 ### Movies Slider
-![Movies Slider](project_1/screenshots/movies.png)
+![Movies Slider](/project_1/screenshots/movies.png)
 
 ### FAQ Section
-![FAQ Section](project_1/screenshots/FAQ.png)
+![FAQ Section](/project_1/screenshots/FAQ.png)
 
 ### Footer Section
-![Footer Section](project_1/screenshots/footer.png)
+![Footer Section](/project_1/screenshots/footer.png)
 
 ---
 
