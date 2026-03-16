@@ -9,7 +9,7 @@ body {
 }
 
 .main {
-    background-image: url("assets/bg.jpg");
+    background-image: url("/project_1/assets/bg.jpg");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -251,48 +251,48 @@ nav {
     transition: .02s ease-in-out;
 }
 
-.card:hover{
+.card:hover {
     transform: scale(1.05);
 }
 
 .card1 {
-    background-image: url("assets/movie1.jpg");
+    background-image: url("/project_1/assets/movie1.jpg");
 }
 
 .card2 {
-    background-image: url("assets/movie2.jpg");
+    background-image: url("/project_1/assets/movie2.jpg");
 }
 
 .card3 {
-    background-image: url("assets/movie3.jpg");
+    background-image: url("/project_1/assets/movie3.jpg");
 }
 
 .card4 {
-    background-image: url("assets/movie4.jpg");
+    background-image: url("/project_1/assets/movie4.jpg");
 }
 
 .card5 {
-    background-image: url("assets/movie5.jpg");
+    background-image: url("/project_1/assets/movie5.jpg");
 }
 
 .card6 {
-    background-image: url("assets/movie6.jpg");
+    background-image: url("/project_1/assets/movie6.jpg");
 }
 
 .card7 {
-    background-image: url("assets/movie7.webp");
+    background-image: url("/project_1/assets/movie7.webp");
 }
 
 .card8 {
-    background-image: url("assets/movie8.webp");
+    background-image: url("/project_1/assets/movie8.webp");
 }
 
 .card9 {
-    background-image: url("assets/movie9.webp");
+    background-image: url("/project_1/assets/movie9.webp");
 }
 
 .card10 {
-    background-image: url("assets/movie10.webp");
+    background-image: url("/project_1/assets/movie10.webp");
 }
 
 .cards-button-container-right {
@@ -425,9 +425,11 @@ nav {
     margin: .5rem;
     background-color: rgb(45, 45, 45);
 }
-.fques ul li:hover{
+
+.fques ul li:hover {
     background-color: rgb(78, 77, 77);
 }
+
 .fques ul li div {
     display: flex;
     align-items: center;
@@ -718,8 +720,9 @@ footer {
         max-width: 1rem;
     }
 }
-@media (min-width:1563px) {
-   .cards-button-container-right {
-    /* right: 52rem; */
-   }
-}
+
+/* @media (min-width:1563px) {
+    .cards-button-container-right {
+        right: 52rem;
+    }
+} */
