@@ -213,6 +213,8 @@ nav {
     justify-content: center;
     align-items: center;
     position: relative;
+    max-width: 79vw;
+    margin: auto;
 }
 
 .cards {
@@ -295,38 +297,38 @@ nav {
     background-image: url("/project_1/assets/movie10.webp");
 }
 
+.cards-button-container-left,
 .cards-button-container-right {
-    padding: 4.7rem 0rem;
-    top: 15px;
     position: absolute;
-    right: 9rem;
-    transition: opacity 400ms ease-in-out;
-    background-color: black;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
 }
 
 .cards-button-container-left {
-    padding: 4.7rem 0rem;
-    top: 5px;
-    position: absolute;
-    left: 7rem;
-    transition: transform 400ms ease-in-out;
-    background-color: black;
+    left: 1.8rem;
+    bottom: 28px;
+}
+
+.cards-button-container-right {
+    right: 1.8rem;
+    bottom: 28px;
+}
+
+.cards-button:hover {
+    background-color: rgba(255, 255, 255, 0.25);
 }
 
 .cards-button {
-    height: 7.5rem;
-    width: 1.5rem;
-    border-radius: 0.5rem;
+    height: clamp(60px, 10vw, 120px);
+    width: 35px;
+    border-radius: 8px;
     border: none;
     display: flex;
-    -webkit-box-align: center;
+    justify-content: center;
     align-items: center;
-    padding: 0px;
-    margin: 0px;
-    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-    color: rgb(255, 255, 255);
+    color: white;
     background-color: rgba(255, 255, 255, 0.1);
-    margin-left: .8rem;
     cursor: pointer;
 }
 
@@ -588,6 +590,16 @@ footer {
     color: rgb(68, 142, 244);
 }
 
+@media (max-width:1712px) {
+    .cards-button-container-right {
+        right: 0;
+    }
+
+    .cards-button-container-left {
+        left: 0;
+    }
+}
+
 @media (max-width:1256px) {
     .navbar {
         padding: 23px 14px;
@@ -629,6 +641,16 @@ footer {
         font-size: .9rem;
         font-weight: 300;
         margin-bottom: 1rem;
+    }
+
+    .cards-button {
+        height: 70px;
+        width: 28px;
+    }
+
+    .cards-button svg {
+        width: 18px;
+        height: 18px;
     }
 }
 
@@ -676,6 +698,16 @@ footer {
     #footer-inp {
         max-width: 15rem;
     }
+
+    .cards-button-container-right {
+        right: -1.2rem;
+        bottom: 151px;
+    }
+
+    .cards-button-container-left {
+        left: -1.2rem;
+        bottom: 151px;
+    }
 }
 
 @media (max-width:389px) {
@@ -720,9 +752,3 @@ footer {
         max-width: 1rem;
     }
 }
-
-/* @media (min-width:1563px) {
-    .cards-button-container-right {
-        right: 52rem;
-    }
-} */

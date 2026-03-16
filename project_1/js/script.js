@@ -1,4 +1,3 @@
-
 let slider = document.getElementById("slider");
 
 let rightBtn = document.querySelector(".cards-button-container-right");
@@ -8,29 +7,35 @@ function checkButtons() {
 
     if (slider.scrollLeft <= 0) {
         leftBtn.style.opacity = "0";
+        leftBtn.style.pointerEvents = "none";
     } else {
         leftBtn.style.opacity = "1";
+        leftBtn.style.pointerEvents = "auto";
     }
 
-    if (slider.scrollLeft + slider.clientWidth >= slider.scrollWidth) {
+    if (Math.ceil(slider.scrollLeft + slider.clientWidth) >= slider.scrollWidth) {
         rightBtn.style.opacity = "0";
+        rightBtn.style.pointerEvents = "none";
     } else {
         rightBtn.style.opacity = "1";
+        rightBtn.style.pointerEvents = "auto";
     }
 
 }
 
 document.querySelector(".next").addEventListener("click", () => {
-    slider.scrollLeft += slider.clientWidth;
+    slider.scrollBy({
+        left: slider.clientWidth,
+        behavior: "smooth"
+    });
 });
 
 document.querySelector(".previous").addEventListener("click", () => {
-    slider.scrollLeft -= slider.clientWidth;
+    slider.scrollBy({
+        left: -slider.clientWidth,
+        behavior: "smooth"
+    });
 });
 
-
-// important line
 slider.addEventListener("scroll", checkButtons);
-
-// page load par bhi check
 checkButtons();
